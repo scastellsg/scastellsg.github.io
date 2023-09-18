@@ -73,7 +73,7 @@
 										    <div class="resume-position-time">2023 - Actualidad</div>
 									    </div>
 									    <div class="resume-timeline-item-desc">
-										    <p>Puesto como senior developer en el departamento I+D+I, principalmente en la parte front-end con React acompañado de typescript.</p>
+										    <p>Puesto como senior developer en el departamento I+D+I, principalmente en la parte front-end con React y typescript.</p>
 										    <h4 class="resume-timeline-item-desc-heading font-weight-bold">Tecnologias usadas:</h4>
 										    <ul class="list-inline">
 											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">React</span></li>
@@ -82,6 +82,7 @@
 											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">HTML5</span></li>
 											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">CSS</span></li>
 											    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Ant Design</span></li>
+												<li class="list-inline-item"><span class="badge bg-secondary badge-pill">Ruby on Rails</span></li>
 										    </ul>
 									    </div>
 								    </article>
@@ -182,13 +183,13 @@
 										<li class="mb-2">
 								            <div class="resume-skill-name">React</div>
 									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
 										<li class="mb-2">
 								            <div class="resume-skill-name">Typescript</div>
 									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
 								        <li class="mb-2">
@@ -218,13 +219,19 @@
 								        <li class="mb-2">
 								            <div class="resume-skill-name">Python</div>
 									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
 								        <li class="mb-2">
 								            <div class="resume-skill-name">Bash</div>
 									        <div class="progress resume-progress">
-											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+								        </li>
+										<li class="mb-2">
+								            <div class="resume-skill-name">Ruby on Rails</div>
+									        <div class="progress resume-progress">
+											    <div class="progress-bar theme-progress-bar-dark" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 								        </li>
 							        </ul>
@@ -233,7 +240,7 @@
 						        <div class="resume-skill-item">
 						            <h4 class="resume-skills-cat font-weight-bold">Otros</h4>
 						            <ul class="list-inline">
-							            <li class="list-inline-item"><span class="badge resume-skill-name">GitHub</span></li>
+							            <li class="list-inline-item"><span class="badge resume-skill-name">Git (GitHub, Bitbucket)</span></li>
 							            <li class="list-inline-item"><span class="badge resume-skill-name">WordPress</span></li>
 						            </ul>
 						        </div>
@@ -290,5 +297,14 @@
 		    </div>
 	    </div>
     </article>
+	<a id="saveAsPdfBtn"><i></i>PDF</a>
+	<script>
+	document.getElementById('saveAsPdfBtn').addEventListener('click', function(e){
+	  var pageUrl = encodeURIComponent(window.location.href);
+	  var opts = ['save-link=' + pageUrl, 'pageOrientation=auto'];
+	  window.open('https://www.sejda.com/html-to-pdf?' + opts.join('&'));
+	  e.preventDefault();
+	});
+	</script>
 </body>
 </html>
